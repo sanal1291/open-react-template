@@ -1,4 +1,5 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg'
+import VideoThumb1 from '@/public/images/VID-1-thumb.png'
+import VideoThumb2 from '@/public/images/VID-2-thumb.png'
 import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
@@ -24,26 +25,40 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Landing template for startups</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+            <h1 className="h1 mb-4" data-aos="fade-up">Welcome to Truston Polymers & Engineering Components</h1>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Truston Polymers is engaged in manufacturing, Processing and Design   Polymer rods, Sheets, high-performance Components & profiles. We also Stocks wide range of Engineering Plastic Products to meet the requirements of our customers.</p>
+            {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
               </div>
+            </div> */}
+          </div>
+          <div className='flex flex-wrap justify-center'>
+            <div className='p-5'>
+              <ModalVideo
+                thumb={VideoThumb1}
+                thumbWidth={240}
+                thumbHeight={416}
+                thumbAlt="Modal video thumbnail"
+                video="/videos/VID-1.mp4"
+                videoWidth={480}
+                videoHeight={832} />
+            </div>
+            <div className='p-5'>
+              <ModalVideo
+                thumb={VideoThumb2}
+                thumbWidth={240}
+                thumbHeight={416}
+                thumbAlt="Modal video thumbnail"
+                video="/videos/VID-2.mp4"
+                videoWidth={480}
+                videoHeight={832} />
             </div>
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
 
         </div>
 
